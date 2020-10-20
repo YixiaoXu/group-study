@@ -1,34 +1,43 @@
-**Title:** <place your *paper title*>
+**Title:** Appending Adversarial Frames for Universal Video Attack
 
-**Source:** <place the *short name* of the conference that your paper comes from>
+**Source:** 
 
-**Authors:** <place the author names of your paper, and separate authors by comma; be careful about each author's first name and last name>
+**Authors:** Zhikai Chen, Lingxi Xie, Shanmin Pang, Yong He, Qi Tian
 
 ---
 
 **Summary**
 
-> Write a summary about the paper (try to avoid using figures). It should address the important issues of this paper (try to ask yourself the following questions):
-> - What is the *problem* the paper aims to solve? Can you explain the problem clearly?
-> - How can the paper address the problem? Can you explain the *main idea* of the paper in your own words, while convincing readers that the idea exactly can solve the problem? At a high level, how does the paper convert the idea to a practical system/algorithm? 
-> - How does the paper validate the systems/algorithms? More importantly, what are the *limitations* of the systems/algorithms? Are there any shadow corner in the systems/algorithms, yet not present in the paper?  
->
-> Overall, try your best to summarize the paper, such that anyone who does not read the paper can have a high-level understanding based on your summary.  
+According to this paper, basic adversarial video attack method which add perturbations to each original frames, has 4 main shortcomings:
+1. High authority needed.
+2. Unsafe. (Easy to percept because neighbor oringinal frames are related while adversarial perturbations are not)
+3. High rate of perturbation
+4. Weak transferibility
+
+To improve the method, the paper raised a new model named Adding Adversarial Frames(AAF), which adds a few dummy frames with adversarial perturbations to original frames.
+
+Meanwhile, the paper also provided severial variants of AAF in order to suits different situations including transferability among modules or videos.
+
+The fool rate and AAP of the two methods mentiond abow proves that AAF has a better performance on perturbation rate and transferability, while a worse performance on targeted attack than the basic adversarial video attack methods.
 
 ---
 
 **Strengthens**  
 
-> Summarize the advantages of the paper in *bullets*.
+1.Lower perturbation rate.
+
+2.Better transferability
 
 ---
 
 **Weaknesses**  
 
-> Give a brief summarization of disadvantages (that can have been mentioned in the Summary part) in *bullets*. Do not trust papers in total, and use *critical thinking* (note that this is the *most important* skill in academic research; try to train this capability) to find shadow sides.  
+1.Did not consider about time cost.
+
+2.A bad performance on targeted attack.
 
 ---
 
 **Comments**  
 
-> Give more detailed elaboration for each weakness point, and convince that *why it is a weakness*; if possible, try to give some fixing solution/suggestion. You can also pose some questions in this part. 
+> The paper did not mention about the time cost to train the module, while time cost has became one of the most important things to considered about while training a module. 
